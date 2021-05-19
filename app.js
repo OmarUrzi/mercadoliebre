@@ -1,6 +1,4 @@
 const express = require('express')
-const session = require('express-session')
-const cookies = require('cookie-parser')
 const app = express()
 const homeRouter = require('./routes/homeRouter')
 const productRouter = require('./routes/productRouter')
