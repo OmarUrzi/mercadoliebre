@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head') %>
+<body>
+
+    <%- include('partials/header') %>
+
+        <section class="banner">
+            <img src="/images/img-home-banner.jpg" alt="ofertas banner">
+        </section>
+
+        <main>
+        
+            <section class="ultima-visita">
+                <h3>Basado en tu última visita</h3>
+            
+ 
+
+                <div class="tarjetas">
+                    <% for( let i = 0; i < 4; i++){%>
+                    <% let productos = products[i] %>
+                    <article>
+                        <a href="/products/<%= productos.id %>">
+                            <img src="/images/<%= productos.image %>" alt="<%= productos.name %>" class="product_img">
+                         </a>              
+
+                            <div class="main-article">
+                                <i class="fas fa-truck"></i>
+                                <p class="precio">$ <%= productos.price %>
+                                </p>
+                                <p class="descuentos">
+                                    <%= productos.descuento %> % off
+                                </p>
+                                <h4 class="descripcion">
+                                    <%= productos.name %>
+                                </h4>
+                            </div>
+                      
+                    </article>
+                    <% }%>
+                   
+                </div>
+            </section>
+
+            <section class="ofertas">
+                <h3>Ofertas</h3>
+                <div class="tarjetas">
+                    
+                    <% for( let i = 4; i < 8; i++){%>
+                        <% let productos = products[i] %>
+                        <article>
+                            <a href="/products/<%= productos.id %>">
+                                <img src="/images/<%= productos.image %>" alt="<%= productos.name %>" class="product_img">
+                             </a>              
+    
+                                <div class="main-article">
+                                    <i class="fas fa-truck"></i>
+                                    <p class="precio">$ <%= productos.price %>
+                                    </p>
+                                    <p class="descuentos">
+                                        <%= productos.descuento %> % off
+                                    </p>
+                                    <h4 class="descripcion">
+                                        <%= productos.name %>
+                                    </h4>
+                                </div>
+                          
+                        </article>
+                        <% }%>
+                   
+                 
+
+                </div>
+            </section>
+
+        </main>
+        <%- include('partials/footer') %>
+        
+
+</body>
+
+</html>

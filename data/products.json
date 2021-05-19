@@ -1,0 +1,58 @@
+[
+ {
+  "id": 1,
+  "name": "Cafetera Moulinex",
+  "descuento": 40,
+  "price": 5000,
+  "image": "img-cafetera-moulinex.jpg"
+ },
+ {
+  "id": 2,
+  "name": "MacBook Pro 2019",
+  "descuento": 18,
+  "price": 75000,
+  "image": "img-macbook-pro-2019.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Samsung Galaxy S10",
+  "descuento": 15,
+  "price": 65000,
+  "image": "img-samsung-galaxy-s10.jpg"
+ },
+ {
+  "id": 4,
+  "name": "SmartTv Samsung 43",
+  "descuento": 10,
+  "price": 35000,
+  "image": "img-tv-samsung-smart.jpg"
+ },
+ {
+  "name": "Computadora",
+  "price": 50000,
+  "descuento": 25,
+  "image": "img-1621379948663.jpg",
+  "id": 5
+ },
+ {
+  "name": "Afeitadora",
+  "price": 3500,
+  "descuento": 20,
+  "image": "afeitadora.jpg",
+  "id": 6
+ },
+ {
+  "name": "Batidora",
+  "price": 15000,
+  "descuento": 15,
+  "image": "batidora.jpg",
+  "id": 7
+ },
+ {
+  "name": "Secador de pelo",
+  "price": 50000,
+  "descuento": 50,
+  "image": "secadora-de-pelo.jpg",
+  "id": 8
+ }
+]
